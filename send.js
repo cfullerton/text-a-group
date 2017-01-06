@@ -3,7 +3,7 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 exports.handler = function(event, context) {
-    var messageText = var number = event.query.message;
+    var messageText = event.query.message;
     console.log(messageText);
   var sns = new AWS.SNS();
     var params = {
